@@ -1,20 +1,528 @@
 {
-    "red": [
-        {"name": "", "description": ""}
-    ],
-    "green": [
-        {"name": "", "description": ""}
-    ],
-    "white": [
-        {"name": "", "description": ""}
-    ],
-    "lunar": [
-        {"name": "", "description": ""}
-    ],
-    "void": [
-        {"name": "", "description": ""}
-    ],
-    "equipment": [
-        {"name": "", "description": ""}
-    ]
+  "red": [
+    {
+      "name": "57 Leaf Clover",
+      "description": "Once on your turn, you may reroll a single dice roll once (+1 per stack)."
+    },
+    {
+      "name": "Aegis",
+      "description": "When you heal past your Maximum HP, you gain half of the extra health (+half per stack) as Temp HP."
+    },
+    {
+      "name": "Alien Head",
+      "description": "You gain an additional spell slot / ability charge of each spell level / ability."
+    },
+    {
+      "name": "Ben's Raincoat",
+      "description": "The first time you are targeted with a debuff, you ignore it and gain 25 Temp HP. Recharges after 10 Turns (-1 per stack)."
+    },
+    {
+      "name": "Bottled Chaos",
+      "description": "When you activate your equipment, a random Equipment effect (+1 effect per stack) is triggered. Roll on the Equipment Item table to determine the effect. The effect can not be the same as your current Equipment Item."
+    },
+    {
+      "name": "Brainstalks",
+      "description": "When you kill an Elite enemy, you gain either one (+1 per stack) expended ability charge or the lowest expended Spell Slot."
+    },
+    {
+      "name": "Brilliant Wand",
+      "description": "Your attacks deal half damage to enemies within 5 ft (+5 ft per stack) of where your attacks land."
+    },
+    {
+      "name": "Ceremonial Dagger",
+      "description": "When you kill an enemy, spectral daggers are summoned and thrown at an enemy 30 ft away. The enemy must pass a DC 16 (+3 per stack) Dex save or take 3d6+6 Psychic damage."
+    },
+    {
+      "name": "Defensive Companion",
+      "description": "Blocks the first ranged attack (+1 ranged attack per stack) that hits you. Recharges at the end of your turn."
+    },
+    {
+      "name": "Dio's Best Friend",
+      "description": "Revives you on death, and consumes a stack."
+    },
+    {
+      "name": "Frost Relic",
+      "description": "Killing an enemy puts a single counter on Frost Relic. Frost Relic consumes one counter at the start of your turn, if there are any. With one counter, the storm deals 2d6 Cold damage and is centered on you with a 10 ft radius. With each additional counter, the storm grows by 5 ft (+5 ft per stack) and the damage is increased by 1d6 (+1d6 per stack)."
+    },
+    {
+      "name": "Head's Up",
+      "description": "Increases jump height by 20 ft (+20 ft per stack), and grants immunity to fall damage. Landing next to an enemy forces them to make a DC 16 (+3 per stack) Dex save, taking the amount of fall damage you would have taken or half as much on a save."
+    },
+    {
+      "name": "Happiest Mask",
+      "description": "Whenever you kill an enemy, they must pass a DC 11 (+3 per stack) Wis save. If they fail, a ghostly copy of that enemy becomes allied to you for 1 minute."
+    },
+    {
+      "name": "Hard Light Afterburner",
+      "description": "Your to rolls to hit, damage, and Spell Save DC are all increased by 3 (+3 per stack)."
+    },
+    {
+      "name": "Insterplaner House Plant",
+      "description": "Enemies you defeat have the effect of Bustling Fungus (+1 Bungus per stack) for one turn where they were defeated."
+    },
+    {
+      "name": "Magic Scope",
+      "description": "Critical Hits deal an additional set of damage (+1 additional set per stack)."
+    },
+    {
+      "name": "N'hkuhana's Opinion",
+      "description": "Whenever you receive 10 or more points of healing, you may cast Magic Missile as a free action at 1st level (Upcast 2 levels per stack)."
+    },
+    {
+      "name": "Pocket ICMM",
+      "description": "Whenever you or an item you have summoned darts or other magic ranged projectile that have no roll to hit or roll to save is required, 2 (+2 per stack) additional missiles are summoned for each missile originally cast."
+    },
+    {
+      "name": "Rejuvenation Rack",
+      "description": "Whenever you are healed, double (+100% per stack) the amount of HP you gain."
+    },
+    {
+      "name": "Resonance Disc",
+      "description": "Killing an enemy puts a counter on Resonance Disc. As your item interaction, you may spend any amount of counters to attack with Resonance Disc. The target takes 1d6 (+1d6) Bludgeoning damage for every counter spent on an attack."
+    },
+    {
+      "name": "Shattering Justice",
+      "description": "Hitting an enemy reduces their AC by 1 (+1) until the start of your next turn."
+    },
+    {
+      "name": "Sentient Meat Hook",
+      "description": "Once per turn (+1 per stack), an enemy you hit with an attack must pass a DC 16 Con save or pull all other enemies within 30 ft closer to it by 10 ft."
+    },
+    {
+      "name": "Soulbound Catalyst",
+      "description": "Killing an enemy lets you roll to recharge Equipment. Reduces the Recharge of Equipment by 1 (+1 per stack)."
+    },
+    {
+      "name": "Spare Artificer Parts",
+      "description": "Your mechanical companions now have Multiattack (2) if they did not before, otherwise gain a Heavy Crossbow. They also gain a +3 (+3 per stack) to their Attack and Damage rolls."
+    },
+    {
+      "name": "Symbiotic Scorpion",
+      "description": "Enemies you hit lose any Damage Resistances they have. If they are Immune to any form of damage, they are instead Resistant."
+    },
+    {
+      "name": "Unstable Tesla Coil",
+      "description": "At the start of your turn, roll a d6. On a 6 this item becomes active. Enemies around you in a 15 ft radius must make a DC 18 Con Save, taking 6d8 (+3d8 per stack) lightning damage or half as much on a save."
+    },
+    {
+      "name": "Wake of Vultures",
+      "description": "Whenever you kill an Elite enemy, you gain their Elite property until the end of your next turn. Survivors can not become Voidtouched."
+    }
+  ],
+  "green": [
+    {
+      "name": "AtG Magic Missile MK1",
+      "description": "Whenever you hit an enemy with a 19 or 20, you summon a magic dart that deals 3d4+5 Force damage (+3d4+5 damage per stack). If the original target dies from your attack, select a new enemy for it to target. No roll to hit or roll to save is required."
+    },
+    {
+      "name": "Backup Quiver",
+      "description": "When you pick this item up, you gain an additional 1st level spell slot. For each additional stack, you gain another spell slot one level higher."
+    },
+    {
+      "name": "Bandolier",
+      "description": "When you kill an enemy, roll a d100. On a 10 or lower (+5 per stack) they drop a quiver that restores one 1st level spell slot (+1 level per stack) or lower. Warlocks instead receive an additional spell slot per stack."
+    },
+    {
+      "name": "Berserker's Pauldron",
+      "description": "Killing 4 enemies in a turn sends you into a frenzy until the end of your next turn (+1 turn per stack), increasing your AC, Attack Rolls, and Damage Rolls by 2."
+    },
+    {
+      "name": "Chrono Bauble",
+      "description": "Enemies you hit move at half speed until the end of their next turn (+1 turn per stack)."
+    },
+    {
+      "name": "Deathmark",
+      "description": "Enemies with a condition other than Invisible or Prone take an additional 1d6 damage (+1d6 per stack) from your damage rolls."
+    },
+    {
+      "name": "Emergency Stealth Scroll",
+      "description": "Falling below 25% health turns you invisible for one round. Recharges on a roll of 6 or higher (-1 per stack) on a d6 at the end of your turn."
+    },
+    {
+      "name": "Fuel Crystal",
+      "description": "Increases the recharge rate for equipment by 1 (+1 per stack)."
+    },
+    {
+      "name": "Ghor's Tome",
+      "description": "Increases your Spell Save DC by 2 (+2 per stack)."
+    },
+    {
+      "name": "Harvester's Scythe",
+      "description": "Critical Strikes heal you for 1d6 (+1d6 per stack)."
+    },
+    {
+      "name": "Hopoo Feather",
+      "description": "Increase your vertical jump by 10ft (+10ft per stack) and ignore 20ft (+10ft per stack) of fall damage."
+    },
+    {
+      "name": "Hunter's Harpoon",
+      "description": "When you pick this item up, you gain an additional charge (+1 charge per stack) of your class abilities / resources."
+    },
+    {
+      "name": "Infusion",
+      "description": "Killing an enemy increases your health by 1 (+1 per stack), to a maximum of 25 (+25 per stack)."
+    },
+    {
+      "name": "Kjaro's Band",
+      "description": "Rolling a 7 or higher on a damage roll deals an additional 2d10 fire damage (+2d10 per stack) to the target and all enemies within 5ft. Can only be used once per round."
+    },
+    {
+      "name": "Leeching Seed",
+      "description": "Dealing damage heals you for 1 hit point (+1 per stack)."
+    },
+    {
+      "name": "Lepton Daisy",
+      "description": "Releases a healing wave during Teleporter Events for 2d8+2 (+2d8+2 per stack) to all allies when the Boss reaches half health."
+    },
+    {
+      "name": "Old Guillotine",
+      "description": "Instantly kill Elite enemies with less than 10 HP (+10 per stack)."
+    },
+    {
+      "name": "Predatory Instincts",
+      "description": "Critical Hits grant you an additional attack on your turn, up to a maximum of 2 (+2 per stack) in one turn."
+    },
+    {
+      "name": "Razor Wire",
+      "description": "Whenever you get hit, you deal 1d6 Slashing damage (+1d6 per stack) to the creature that hit you."
+    },
+    {
+      "name": "Regenerating Scrap",
+      "description": "Can be used at a Magic Printer to make an Uncommon or Rare item once (+1 per stack) each stage."
+    },
+    {
+      "name": "Rose Buckler",
+      "description": "You become resistant to non-magical damage and increase your AC by 1 (+1 per stack) when you take the Dash action until the start of your next turn."
+    },
+    {
+      "name": "Runald's band",
+      "description": "Rolling a 7 or higher on a damage roll deals an additional 2d10 cold damage (+2d10 per stack) to the target and all enemies within 5ft. Can only be used once per round."
+    },
+    {
+      "name": "Shipping Request Form",
+      "description": "Upon completing a stage, you may choose one (+1 per stack) item of Uncommon rarity to appear on the next stage."
+    },
+    {
+      "name": "Shuriken",
+      "description": "The first attack roll you make on your turn (+1 Attack per stack) deals an additional 3d6 Slashing damage."
+    },
+    {
+      "name": "Soldier's Serum",
+      "description": "Whenever you make the Attack action or cast a Cantrip, you may make an additional attack (+1 Attack per stack) or upgrade your cantrip to the next stage (+1 Attack / Damage Dice per stack)."
+    },
+    {
+      "name": "Ukulele",
+      "description": "Rolling the maximum amount on a damage roll deals an additional 2d12+6 Lightning damage. Up to three other enemies (+3 per stack) within 15 ft of each other also receive this damage."
+    },
+    {
+      "name": "Waz Qual",
+      "description": "Increases your Leap distance by 10 ft (+10 ft per stack)."
+    },
+    {
+      "name": "Will-o-the-wisp",
+      "description": "Killing an enemy deals 2d6 fire damage (+2d6 for each stack) to each enemy within 10 ft of it (+5 ft per stack)."
+    }
+  ],
+  "white": [
+    {
+      "name": "Armor Piercing Bolts",
+      "description": "Deal an additional 1d10 damage (+1d10 per stack) to boss enemies."
+    },
+    {
+      "name": "Armor Plate",
+      "description": "Increase your AC by 1 (+1 per stack)."
+    },
+    {
+      "name": "Bison Steak",
+      "description": "Increase your health by 5 + Con modifier (+5 + Con modifier per stack)."
+    },
+    {
+      "name": "Bustling Fungus",
+      "description": "If you have not moved by the end of your turn, you create a healing zone in a 5ft radius (+2.5ft per stack) that heals for you and allies for 1d6 (+1d6 per stack) while you remain stationary."
+    },
+    {
+      "name": "Crowbar",
+      "description": "Add an additional 1d8 damage (+1d8 per stack) to attacks that hit enemies at full health."
+    },
+    {
+      "name": "Delicate Watch",
+      "description": "All attacks get a +1 to hit (+1 per stack) and a +1 on damage rolls (+1 per stack). This item breaks if you fall below 50% of your maximum health."
+    },
+    {
+      "name": "Energy Brew",
+      "description": "Increase your movement speed by 15 ft whenever you take the Dash action."
+    },
+    {
+      "name": "Explosive Barb",
+      "description": "Whenever you hit an enemy with an attack, they take an additional 1d4 Fire damage (+1d4 per stack)."
+    },
+    {
+      "name": "Focus Crystal",
+      "description": "Increase damage by 1d6 (+1d6 per stack) to enemies that are within 15 ft of you."
+    },
+    {
+      "name": "Glasses",
+      "description": "Increase your crit range by 1 (+1 per stack)."
+    },
+    {
+      "name": "Medkit",
+      "description": "If you were harmed outside of your turn, heal 1d4 (+1d4 per stack) on the start of your turn."
+    },
+    {
+      "name": "Minitaur’s Hoof",
+      "description": "Increase your base movement speed by 5ft (+5ft per stack)."
+    },
+    {
+      "name": "Mocha",
+      "description": "Increase your Initiative by 1 (+1 per stack)."
+    },
+    {
+      "name": "Monster Tooth",
+      "description": "Killing an enemy drops a healing orb, healing for 1d6 (+1d6 per stack) to whoever picks it up."
+    },
+    {
+      "name": "Oddly Shaped Opal",
+      "description": "The first time you take damage is reduced by half. Recharges after 10 Turns (-1 per stack)."
+    },
+    {
+      "name": "Shield Generator",
+      "description": "You are granted a shield worth 10 (+10 per stack) Temp HP. If you have not taken damage for at least one minute, the Shield Generator refills your Temp HP. Your Temp HP can not deteriorate below the Shield Generator."
+    },
+    {
+      "name": "Stunning Barb",
+      "description": "Whenever you hit an enemy with an attack, they must pass a DC 10 (+1 per stack) Con save or become Stunned for one round."
+    },
+    {
+      "name": "Topaz Brooch",
+      "description": "Gain 5 Temp HP (+5 per stack) when you kill an enemy."
+    },
+    {
+      "name": "Tougher Times",
+      "description": "Whenever you take damage, roll a d100. If you rolled 10 or lower (+5! per stack, minimum of 1) on the d100, the damage is negated."
+    },
+    {
+      "name": "Tri-tip Dagger",
+      "description": "Whenever you hit an enemy with an attack, they must make a DC 10 (+1 per stack) Con save or gain a stack of Bleed."
+    },
+    {
+      "name": "Warbanner",
+      "description": "You drop a Warbanner once per short rest, and on Teleporter events. Allies within 15 ft (+5 ft per stack) of the banner gain +1 AC and +1 to Attack rolls made."
+    }
+  ],
+  "lunar": [
+    {
+      "name": "Beads of Fealty",
+      "description": "Its effects are unknown."
+    },
+    {
+      "name": "Corpsebloom",
+      "description": "You receive 100% (+100% per stack) more healing, but all healing you receive is only applied at the end of your turn. If your HP goes below 0, Corpsebloom will not heal you, and another source is needed to get you above 0."
+    },
+    {
+      "name": "Egocentrism",
+      "description": "Egocentrism starts with 3 charges on it. Every minute, Egocentrism will consume a random item in your inventory, putting an additional counter on Egocentrism. At the start of your turn, you gain an orbiting dart up to the amount of charges on Egocentrism. As a free action, you may fire all built up charges on an enemy within 30 ft, dealing 3d4+3 (+3d4 per stack) Force damage."
+    },
+    {
+      "name": "Eulogy Zero",
+      "description": "Whenever you open a container, roll a d100. If you roll a 5 (+5 per stack) or lower, the item becomes a Lunar item instead."
+    },
+    {
+      "name": "Gesture of the Drowned",
+      "description": "When rolling to recharge your equipment, you may make two rolls. Equipment must be used when it has a charge."
+    },
+    {
+      "name": "Light Flux Pauldron",
+      "description": "Adds three charges (+3 per stack) to a class ability / resource of your choice, but halves (half again each stack) the total amounts of attacks you can make as part of your Attack action, to a minimum of 1. If you were to cast a Cantrip, half the amount of attacks / damage rolled (half again each stack)."
+    },
+    {
+      "name": "Purity",
+      "description": "All abilities that are refreshed on a long rest now refresh on a short rest. To recharge class abilities, you no longer need to short rest and it only takes half (half again each stack) the amount of time. Whenever you roll a dice that would activate an item's effect, you must reroll the dice (reroll one additional time if the new result activates an effect each stack) and use the new result. If you were to have 57 Leaf Clover in the same inventory, each stack of Purity and 57 Leaf Clover negate the effects of each other, without consuming or removing the items."
+    },
+    {
+      "name": "Shaped Glass",
+      "description": "Add an additional set of dice (+1 set per stack) whenever you roll for damage, but decrease your total HP by half (half again each stack) your base HP."
+    },
+    {
+      "name": "Stone Flux Pauldron",
+      "description": "Increase your Max HP by 100% (+100% per stack), but decrease your To Hit bonus by half (half again each stack)."
+    },
+    {
+      "name": "Transcendence",
+      "description": "When you pick this item up, you increase your total HP by 25% (+25% per stack). All but 1 point of your Total HP is converted to Temp HP, with the rules of the Shield Generator. Your Temp HP takes 1 (+1 per stack) less round to recharge."
+    }
+  ],
+  "void": [
+    {
+      "name": "Benthic Bloom",
+      "description": "Corrupts all 57 Leaf Clovers. At the beginning of each stage, 2 (+2 per stack) random Uncommon or Rare items you hold are transformed into the next tier."
+    },
+    {
+      "name": "Lost Seer's Lenses",
+      "description": "Corrupts all Glasses. When you hit a non-boss enemy, roll a d100. On a roll of 1 (+1 per stack) or lower, the enemy is immediately killed."
+    },
+    {
+      "name": "Needletick",
+      "description": "Corrupts all Tri-tip Daggers. When you hit an enemy, they must pass a DC 12 (+1 per stack) Con save or gain a stack of Collapse. At the end of their next turn, Collapse ends, dealing 1d12 Force damage per stack."
+    },
+    {
+      "name": "Plasma Shrimp",
+      "description": "Corrupts all AtG Magic Missile MK1. As long as you have Temp HP, hitting an enemy summons a single (+1 per stack) Magic Missile at the end of your turn. Your temp HP can not decay below 5."
+    },
+    {
+      "name": "Pluripotent Larva",
+      "description": "Corrupts all Dio's Best Friends. Upon death, you are resurrected and all items are corrupted. Items without a Void counterpart are left untouched. Becomes innate upon use (+1 use per stack)."
+    },
+    {
+      "name": "Polylute",
+      "description": "Corrupts all Ukuleles. Rolling a 1 on a damage roll deals an additional 2d6 Psychic damage (+2d6 per stack). Only works once per attack."
+    },
+    {
+      "name": "Safer Spaces",
+      "description": "Corrupts all Tougher Times. Reduces damage from an attack to 0. This item recharges after 10 turns (-1 per stack)."
+    },
+    {
+      "name": "Singularity Band",
+      "description": "Corrupts all Runald's Bands and Kjaro's Bands. Rolling the maximum amount on a damage roll creates a black hole centered on the target, dealing an additional 4d6 Force (+2d6 damage per stack) to the target and all enemies within a 20 ft area. Can only be used once per turn."
+    },
+    {
+      "name": "Tentabauble",
+      "description": "Corrupts all Chronobaubbles. Enemies you hit must pass a DC 13 Wis Save (+1 per stack) or have their movement speed reduced to 0 until the end of their next turn."
+    },
+    {
+      "name": "Voidsent Flame",
+      "description": "Corrupts all Will-o'-the-wisp. Hitting an enemy at full health deals 4d6 fire damage (+2d6 for each stack) to each enemy within 10ft of it (+5ft per stack)."
+    },
+    {
+      "name": "Weeping Fungus",
+      "description": "Corrupts all Bustling Fungus. Whenever you take the Dash action, you heal for 2d12+6(+2d12 per stack)."
+    }
+  ],
+  "equipment": [
+    {
+      "name": "Blast Shower",
+      "description": "Removes all negative statuses."
+    },
+    {
+      "name": "Magic Missile Launcher",
+      "description": "You summon a dozen magical darts dealing 1d4 damage each. You may only target one creature at a time, however darts that would hit a downed monster can be redirected at a new target. No roll to hit or roll to save is required."
+    },
+    {
+      "name": "Foreign Fruit",
+      "description": "Instantly heals you for half of your maximum HP."
+    },
+    {
+      "name": "Forgive Me Please",
+      "description": "Triggers any \"On Kill\" effects centered on you."
+    },
+    {
+      "name": "Gnarled Woodsprite",
+      "description": "You gain a follower that always heals you for 1d4+2 at the start of your turn. Can be sent to heal an ally for 3d4+3 when activated."
+    },
+    {
+      "name": "Gorag's Opus",
+      "description": "Gives all allies an extra action and increases their movement speed by half until the start of your next turn."
+    },
+    {
+      "name": "Jade Elephant",
+      "description": "Gain resistance to all forms of damage until the end of your next turn. If you already have resistance, gain immunity instead."
+    },
+    {
+      "name": "Milky Chrysalis",
+      "description": "Gives you a flight speed equal to your movement speed until the end of your next turn."
+    },
+    {
+      "name": "Ocular HUD",
+      "description": "All attacks that hit count as criticals until the start of your next turn."
+    },
+    {
+      "name": "Primordial Cube",
+      "description": "Summon a vortex on a point you can see that drags all creatures in a 20 ft radius around it in."
+    },
+    {
+      "name": "Radar Scanner",
+      "description": "Reveals all interactables, including those normally hidden."
+    },
+    {
+      "name": "Recycler",
+      "description": "Rerolls a dropped item once. The new item can not be a different rarity than the original."
+    },
+    {
+      "name": "Remote Alchemist",
+      "description": "A Potion Seller drops into the stage, offering 1d4 Greater Healing potions."
+    },
+    {
+      "name": "Royal Capacitor",
+      "description": "Call down a lightning strike on a monster you can see, dealing 8d12+8 Lightning damage."
+    },
+    {
+      "name": "Sawmerang",
+      "description": "The Sawmerang travels in a line 15 ft wide and 50 ft long. All enemies within this area must make a DC 15 Dex save, taking 6d12+6 Slashing damage or half as much on a save."
+    },
+    {
+      "name": "Leech of Unusual Size",
+      "description": "Heals you for half the amount of damage you deal in a turn."
+    },
+    {
+      "name": "Trophy Hunter's Crossbow",
+      "description": "Executes a boss or elite enemy, dropping their unique reward. Breaks on use."
+    },
+    {
+      "name": "Volcanic Egg",
+      "description": "Transform into a small wisp, traveling up to 60 ft unimpeded and detonates in a 3rd level Fireball at the final destination. You are immune to the damage of the Fireball."
+    }
+  ],
+  "boss": [
+    {
+      "name": "Charged Perforator",
+      "description": "When you pick up this item for the first time, pick a number ranging from 0 to 9. After rolling damage for an attack, if the damage roll ends in that number, a lightning strikes the target for an additional 5d10+10 (+5d10 per stack) Lightning damage."
+    },
+    {
+      "name": "Defense Nucleus",
+      "description": "When you kill an Elite enemy, a friendly Alpha Construct is summoned where it fell. Limited to 2 (+2 per Stack) Alpha Constructs."
+    },
+    {
+      "name": "Genesis Loop",
+      "description": "Falling below 25% of your maximum health releases an explosion centered on you. Each enemy in a 60 ft radius must make a DC 16 Dex Save, taking 10d12 Force damage or half as much on a save. This item can only be activated once every minute (-1 turn per stack)."
+    },
+    {
+      "name": "Halcyon Seed",
+      "description": "When you start a Teleporter Event, an Aurelionite Guardian is summoned. Its stats are based on your current stage (+1 Stage per stack)."
+    },
+    {
+      "name": "Irradiant Pearl",
+      "description": "When you pick this item up, increase your base Characteristic Scores by 1 (+1 per stack), your maximum HP by 10% (+10% per stack), and your AC by 1 (+1 per stack)."
+    },
+    {
+      "name": "Little Disciple",
+      "description": "When you take the Dash action, for every 5 ft you move you summon a tracking wisp at the end of your turn. Each wisp fires at a target of your choice within 20 ft. The target must pass a DC 14 (+3 per stack) or take 3d4+3 Fire damage."
+    },
+    {
+      "name": "Mired Urn",
+      "description": "A single enemy (+1 target per stack) within 15 ft of you has their life force drained. They must pass a DC 14 Con save, taking 4d6+4 Necrotic damage or half as much on a save. You regain all health lost by this item."
+    },
+    {
+      "name": "Molten Perforator",
+      "description": "When you pick up this item for the first time, pick a number ranging from 0 to 9. After rolling damage for an attack, if the damage roll ends in that number, a fireball explodes centered on the target. All enemies within its 20 ft radius must pass a DC 14 Dex Save, taking 3d10+5 (+3d10 per stack) fire damage or half as much on a save."
+    },
+    {
+      "name": "Pearl",
+      "description": "When you pick this item up, increase your maximum HP by 10% (+10% per stack)."
+    },
+    {
+      "name": "Planula",
+      "description": "Whenever you lose HP, as long as you have at least 1 HP left you heal for 10 HP (+10 HP per stack)."
+    },
+    {
+      "name": "Queen's Gland",
+      "description": "You gain a Beetle Guard as a companion. Its stats are based on the current stage + 1 (+2 per stack)."
+    },
+    {
+      "name": "Shattered Spleen",
+      "description": "Whenever you hit an enemy with a Critical Hit, they gain a stack of Bleed (+1 stack of Bleed per stack). If an enemy dies to the damage done by Bleed they explode in a 5 ft radius, dealing the remaining damage to all enemies around it."
+    },
+    {
+      "name": "Titanic Knurl",
+      "description": "Increase your maximum health by 20 (+20 per stack) and increase your Con modifier by 2 (+2 per stack) when rolling to regain health on short and long rests."
+    }
+  ]
 }
